@@ -17,9 +17,9 @@ layout: default
                 <div class="panel panel-default">
                   
                   {% if post.img %}
-                  <img style="height:100;" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
+                  <img height=100 src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
                   {% else %}
-                  <img style="height:100;" src="{{site.baseurl}}/images/webjeda-logo-big.jpg" alt="{{site.title}}">
+                  <img height=100 src="{{site.baseurl}}/images/webjeda-logo-big.jpg" alt="{{site.title}}">
                   {% endif %}
                   
                   <div class="panel-body">
@@ -32,8 +32,8 @@ layout: default
                  
                   <div class="panel-body">
                    {% for tag in post.tags %} 
-                    <small><span class="w3-badge">{{ tag }}</span></small>
-                   
+                     <small><span class="w3-badge">{{ tag }}</span></small>
+                     <div class="w3-round-large w3-purple">{{ tag }}</div>
                    {% endfor %}
                   </div>
               
