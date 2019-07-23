@@ -8,7 +8,9 @@ layout: default
     <div class="row pack">
 
     {% for category in site.categories %}
-     <h3>{{ category[0] }}</h3><br></br><br />
+     <div class="col-xs-12">
+     <h3>{{ category[0] }}</h3>
+     </div>
        {% for post in category[1] %}   
             <div class="col-md-2 card">
              <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">    
