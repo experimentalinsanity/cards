@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Webjeda cards
+title: OPI Tech Matrix
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Webjeda Cards is a Bootstrap based jekyll theme for portfolio, photography or any kind of blog.
@@ -20,10 +20,10 @@ default-image: webjeda-logo-big.jpg # If there is no featured image in a post th
 
 #footer
 
-built-by: webjeda
+built-by: Optum OPI
 
 copyright:
-   name: webjeda
+   name: Optum
    link: 'http://blog.webjeda.com'
 
 # Build settings
@@ -40,17 +40,17 @@ disqus: yes
 disqus-shortname: webjeda-demo
 
 #social
-facebook: http://facebook.com/webjeda
-quora: http://quora.com/sharathdt
-twitter: http://twitter.com/@webjeda
-github: http://github.com/webjeda
-email: hello@webjeda.com
+facebook: 
+quora: 
+twitter: 
+github: http://github.optum.com/jdefauw
+email: 
 
 #facebook like box
-fb-like-box: yes
-fb-app-id: 549480635219583
-fb-page-url: https://www.facebook.com/webjeda/
-fb-page-title: webjeda
+#fb-like-box: yes
+#fb-app-id: 549480635219583
+#fb-page-url: https://www.facebook.com/webjeda/
+#fb-page-title: webjeda
 
 # Sass style
 sass:
