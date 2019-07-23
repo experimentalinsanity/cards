@@ -7,7 +7,10 @@ layout: default
   
     <div class="row pack">
 
-        {% for post in paginator.posts %}   
+    {% for category in site.categories %}
+        <h3>{{ category[0] }}</h3>
+     
+        {% for post in category[1] %}   
             <div class="col-md-2 card">
              <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">    
                 <div class="panel panel-default">
@@ -25,11 +28,17 @@ layout: default
                   <div class="panel-body"><small>
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</small>
                   </div>
-                </div>
+                 
+                  <div class="panel-body"><small>
+                    {{ post.tags | strip_html | strip_newlines | truncate: 180 }}</small>
+                  </div>
+              
+                  </div>
                 </a>
             </div>
         
           {% endfor %}
+    {% endfor %}
 
     </div> 
     
